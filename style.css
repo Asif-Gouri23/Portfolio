@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+background-color: #081b29;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    overflow-x:hidden ;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 85%;
+    padding: 20px 10%;
+    background: rgb(10, 29, 70);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: beige;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a {
+    display: inline-block;
+    font-weight: 500;
+    margin-left: 35px;
+    text-decoration: none;
+    transition: none;
+    color: beige;
+    font-size: 25px;
+}
+.navbar a:hover{
+    color: aqua;
+}
+.home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+    color: rgb(165, 161, 161);
+}
+
+.design .rectangle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius:70% ;
+    top: 20%;
+    left: 60%;
+    height: 75%;
+    width: 33%;
+}
+
+.rectangle{
+    background-color: aliceblue;
+    width: 30rem;
+    background-image: url("image.png");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    box-shadow: 
+    0 0 1rem rgb(165, 161, 161) , 
+    inset 0 0 1rem rgb(165, 161, 161),
+    0 0 2rem beige;
+    background-size: cover;
+}
+
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items:center ;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border-radius: 50%;
+    font-size: 2rem;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .3s;
+    border: .2rem solid rgb(48, 45, 45);
+    color: rgb(165, 161, 161);
+}
+.social-media a :hover{
+    color: aqua;
+}
+
+.btn{
+    display: inline-flex;
+    padding: 1rem 2.8rem;
+    background: rgb(48, 45, 45);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    box-shadow: 0 0 2rem rgb(48, 45, 45);
+    transition: .3s;
+    letter-spacing: .1rem;
+    color: beige;
+    font-weight: 600;
+    transition: .3s;
+    background: transparent;
+}  
+
+.btn:hover{
+    box-shadow: none;
+    color: aqua;
+}
+
+.about {
+    padding: 80px 0;
+    color: aqua;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 20%;
+    font-size: 2rem;
+}
+.about-col-1{
+    flex-basis: 35%;
+    padding: 1rem 2rem;
+}
+ .about-col-1 img{ box-shadow: 0 0 3rem rgb(48, 45, 45) ;
+    width: 100%;
+    height: 100%; 
+    border-radius: 20px;
+
+}
+.about-col-2{
+    flex-basis: 50%;
+}
+
+.about-col-2 big{
+    font-size: 3rem;
+    color: beige;
+}
+.about-col-2 b{
+    color: rgb(165, 161, 161);
+}
+.about-col-2 p{
+padding-top: 1rem;
+}
+.about-me{
+    font-size: 1.2rem;
+}
+
+
+.main-text h2 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+
+.skill-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+    margin-left: 5rem;
+}
+
+.skill-bar{
+    margin-bottom: 2rem;
+}
+
+.skill-main h3{
+    margin-bottom:2rem ;
+    font-size: 2.5rem;
+    text-align: center;
+
+}
+
+.skill-left .skill-bar .info{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 10px;
+    width: 80%;
+}
+
+
+.skill-left .skill-bar .bar {
+    width: 80%;
+    height: 10px;
+    background-color: rgb(94, 104, 104);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+
+}
+.skill-bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: aqua;
+    border-radius: 25px;
+}
+
+.skill-bar .bar .html{
+    width: 82%;
+    animation: html 2s;
+}
+
+.skill-bar .bar .css{
+    width: 65%;
+    animation: css 3s;
+}
+.skill-bar .bar .javascript{
+    width: 50%;
+    animation: javascript 4s;
+}
+
+
+.porfressional{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.pro-bar{
+    margin-bottom: 2rem;
+}
+
+
+.skill-right .pro-bar .work{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 10px;
+    width: 80%;
+}
+
+
+.skill-right .pro-bar .ber {
+    width: 80%;
+    height: 10px;
+    background-color: rgb(94, 104, 104);
+    border-radius: 50%;
+    margin-top: 10px;
+    position: relative;
+
+}
+.pro-bar .ber span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+.pro-bar .ber .Team-work{
+    width: 82%;
+    animation: html 2s;
+    border-radius: 50%;
+} 
+.pro-bar .ber .Problem-Solving{
+    width: 75%;
+    animation: html 3s;
+    border-radius: 50%;
+} 
+.pro-bar .ber .Communication{
+    width: 60%;
+    animation: html 4s;
+    border-radius: 50%;
+} 
+.pro-bar .ber .Creativity{
+    width: 90%;
+    animation: html 5s;
+    border-radius: 50%;
+} 
+.button{
+    display: inline-flex;
+    padding: 1rem 2.8rem;
+    background: rgb(48, 45, 45);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    box-shadow: 0 0 2rem rgb(48, 45, 45);
+    transition: .3s;
+    letter-spacing: .1rem;
+    color: beige;
+    font-weight: 600;
+    transition: .3s;
+    background: transparent;
+}
+.button:hover{
+    color: aqua;
+}
+
+
+
+
+
+
+
+
+
+.contact h2{
+    margin-bottom: 3rem;
+}
+
+.contact form{
+    max-width: 70em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background: rgba(50, 53, 54, 0.63);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact form .input-box input{
+    width: 40%;
+}
+
+.contact form textarea{
+    resize: none;
+}
+.contact form .button{
+    margin-top: 2rem;
+    cursor: pointer;
+} 
+
+.contact-box{
+    width: 70%;
+    
+}
+.heading {
+   margin-left: 10rem;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 82%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+
+@keyframes Creativity{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes Communication{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes Problem-Solving{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes Team-work{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+
