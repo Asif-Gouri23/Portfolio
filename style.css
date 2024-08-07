@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
 background-color: #081b29;
     width: 100%;
@@ -52,6 +55,10 @@ background-color: #081b29;
     align-items: center;
     padding: 70px 10% 0;
     color: rgb(165, 161, 161);
+}
+.home span{
+    color: aqua;
+    margin-left: 5px;
 }
 
 .design .rectangle{
@@ -302,11 +309,43 @@ padding-top: 1rem;
     color: aqua;
 }
 
+.edu-title{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+.bottom-edu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 30px;
+    margin-top:50px;
+    justify-content: space-evenly;
 
+}
+.edu-img1{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 80px;
+}
 
+.edu-img1 img{
+    width: 50%;
+    border-radius: 10px;
+    display: block;
+}
+.edu-text{
+    margin-left: 15px;
+    font-size: 1.2rem;
+    color :rgb(194, 211, 211);
+}
+.edu-text span{
+    color:aqua;
 
-
-
+}
 
 
 
